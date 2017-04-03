@@ -12,7 +12,7 @@ public class Test {
 		System.out.println("point" + (a2.getPoint()+6));
 		
 		ArrayList<String> a = new ArrayList<>();
-		a.add(a);
+		a.add("sdlkfj");
 	}
 
 }

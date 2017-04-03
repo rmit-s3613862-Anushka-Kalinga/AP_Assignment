@@ -10,7 +10,7 @@ public class Database {
 	ArrayList<String> s = new ArrayList<String>();
 	s.add("sefkjl");
 	
-	("SW01", "Shane Gould", 21, "VIC");
+/*	("SW01", "Shane Gould", 21, "VIC");
 	("SW02", "Ian Thorpe", 24, "NSW");
 	("SW03", "Dawn Fraser", 22, "QLD");
 	("SW04", "Murray Rose", 21, "WA");
@@ -28,7 +28,7 @@ public class Database {
 	("CY07", "Mark Renshaw", 26, "VIC");
 	("CY08", "Adam Hansen", 23, "NSW");
 	
-	("SP01", " Billy MacPherson", 21, "VIC");
+	("SP01", "Billy MacPherson", 21, "VIC");
 	("SP02", "Bill Cartwright", 24, "NSW");
 	("SP03", "Stan Rowley", 22, "QLD");
 	("SP04", "George Moir", 21, "WA");
@@ -37,7 +37,14 @@ public class Database {
 	("SP07", "Ron Opie", 26, "VIC");
 	("SP08", "Jimmy Carlton", 23, "NSW");
 	
+	("SA01", "John Landy", 21, "VIC");
+	("SA02", "Michael Hillardt", 24, "NSW");
+	("SA03", "Alan Ozolins", 22, "QLD");
+	("SA04", "Simon Doyle", 21, "WA");
+	("SA05", "Peter Watson", 23, "SA");
+	("SA06", "Lachlan Renshaw", 20, "TAS");
 	
+*/	
 	
 	
 	

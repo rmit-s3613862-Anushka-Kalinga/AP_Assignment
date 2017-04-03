@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 public class Test {
 
 	public static void main(String[] args) {
@@ -11,7 +11,8 @@ public class Test {
 		System.out.println(a2.compete());
 		System.out.println("point" + (a2.getPoint()+6));
 		
-
+		ArrayList<String> a = new ArrayList<>();
+		a.add(a);
 	}
 
 }

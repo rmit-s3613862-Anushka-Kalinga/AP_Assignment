@@ -5,8 +5,8 @@ public class Sprinter extends Athlete{
 	public Sprinter(String ID, String name, int age, String state){
 		super(ID, name, age, state);
 	}
-	public int compete(){
+	public void compete(){
 		Random ran = new Random();
-		return ran.nextInt((max - min)+1) + min ;
+		competeTime = ran.nextInt((max - min)+1) + min ;
 		}
 }

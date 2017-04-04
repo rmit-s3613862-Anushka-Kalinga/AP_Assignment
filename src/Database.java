@@ -1,8 +1,5 @@
 import java.util.ArrayList;
 
-import com.sun.org.apache.bcel.internal.generic.ATHROW;
-
-
 public class Database {
 	
 	public  ArrayList getData (){
@@ -16,16 +13,15 @@ public class Database {
 		return g;
 	
 	}
-	public  ArrayList getDataAth (){
-		ArrayList<Athlete> g = new ArrayList<Athlete>();
+	public  ArrayList getDataSwimming (){
+		ArrayList<Athlete> dataSwimmer = new ArrayList<Athlete>();
 		Athlete s1 = new Swimmer("sw1", "Andy", 23, "vic");
 		Athlete s2 = new Swimmer("sw2", "Peters", 35, "mel");
-		Athlete sa1 = new SuperAthlete("sa1", "Tec", 22, "vic", 1);
-		g.add(s1);
-		g.add(s2);
-		g.add(sa1);
-		return g;
-	
+		Athlete sa1 = new SuperAthlete("sa1", "Tec", 22, "vic", 2);
+		dataSwimmer.add(s1);
+		dataSwimmer.add(s2);
+		dataSwimmer.add(sa1);
+		return dataSwimmer;	
 	}
 //=======
 /*	("SW01", "Shane Gould", 21, "VIC");

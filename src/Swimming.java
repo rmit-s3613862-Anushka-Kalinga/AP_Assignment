@@ -1,4 +1,6 @@
-import java.util.ArrayList;
+import java.util.*;
+
+
 public class Swimming extends Sport {
 	
 	private ArrayList<Athlete> p;
@@ -7,14 +9,29 @@ public class Swimming extends Sport {
 	
 	public Swimming(){
 		Database d = new Database();
-		p = d.getDataAth();
+		p = d.getDataSwimming();
 		
 	}
 	public void startGame(){
-		System.out.println(p.get(2).compete());
-	}
-	public void compareTo(Athlete p){
-		//int c = ((Athlete)p).
+		p.get(0).compete();
+		p.get(1).compete();
+		p.get(2).compete();
 	}
 
+	public  void sorting (){
+		/*Iterator<Athlete> swim = p.iterator();
+		while(swim.hasNext()){
+			Athlete a = swim.next();
+			System.out.println(a.getCompeteTime());		
+			
+		}
+			*/	
+		Collections.sort(p);
+		Iterator<Athlete> afterswim = p.iterator();
+		while(afterswim.hasNext()){
+			Athlete aa = afterswim.next();
+			System.out.println(aa.getCompeteTime());		
+		}
+		
+	}
 }

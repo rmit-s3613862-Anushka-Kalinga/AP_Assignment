@@ -1,5 +1,5 @@
 import java.util.Random;
-public class Swimmer extends Athelete {
+public class Swimmer extends Athlete {
 	int min = 100;
 	int max = 200;	
 

@@ -1,5 +1,5 @@
 import java.util.Random;
-public class Sprinter extends Athelete{
+public class Sprinter extends Athlete{
 	int min = 10;
 	int max = 20;
 	public Sprinter(String ID, String name, int age, String state){

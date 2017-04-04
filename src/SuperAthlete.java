@@ -1,14 +1,15 @@
 import java.util.Random;
-public class SuperAthlete extends Athelete {
+public class SuperAthlete extends Athlete {
 	
 	int type;
+	int ranTime;
 	
 	public SuperAthlete(String ID, String name, int age, String state, int type){
 		super(ID, name, age, state);
 		this.type = type;
 	}
 	public int compete(){
-	int ranTime = 0;	
+	//int ranTime = 0;	
 	if (type == 1){
 		ranTime = getRandom(10, 20); 
 	}

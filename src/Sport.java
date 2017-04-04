@@ -11,4 +11,6 @@ public abstract class Sport {
 		this.gameID = gameID;
 	}
 	
+	public abstract void startGame();
+	
 }

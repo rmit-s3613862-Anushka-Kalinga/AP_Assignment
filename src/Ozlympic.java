@@ -14,7 +14,7 @@ public class Ozlympic {
 	/**
 	 * @param args
 	 */
-	private int userinput;
+	/*private int userinput;
 	public void menu(){
 		System.out.println("Ozlympic Game");
 		System.out.println("========================");
@@ -59,5 +59,10 @@ public class Ozlympic {
 		d1.userInput();
 
 	}
-
+*/
+	public Database makeGame(){
+		Database dataCollection = new Database();
+		//d1.swimming1();
+		return dataCollection;
+	}
 }

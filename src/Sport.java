@@ -1,7 +1,11 @@
 
 public abstract class Sport {
 
-	private String gameID;	
+	private String gameID;
+	
+	public Sport(String gameID){
+		this.gameID = gameID;
+	}
 
 	public String getGameID() {
 		return gameID;
@@ -11,6 +15,10 @@ public abstract class Sport {
 		this.gameID = gameID;
 	}
 	
-	public abstract void startGame();
+	protected abstract void startGame();
+	//protected abstract ArrayList<At> getAthlete(); 
+	protected abstract Athlete getWinner();
+	protected abstract void sorting ();
+	protected abstract void setPointsForWinners();
 	
 }

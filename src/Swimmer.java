@@ -3,6 +3,7 @@ public class Swimmer extends Athlete{
 	private int min = 100;
 	private int max = 200;
 	private int ranTime =0;
+	public static int pointforgame =0;
 
 	public Swimmer(String ID, String name, int age, String state){
 		super(ID, name, age, state);		

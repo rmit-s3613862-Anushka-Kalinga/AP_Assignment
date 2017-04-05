@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 public class Test {
 
 	public static void main(String[] args) {
@@ -21,9 +22,32 @@ public class Test {
 		
 		
 		
-		Swimming sss = new Swimming();
-		sss.startGame();
-		sss.sorting();
+		//Swimming sss = new Swimming();
+		//sss.startGame();
+		//sss.sorting();
+		//sss.setPointsForWinners();
+		Scanner sc = new Scanner(System.in);
+		Ozlympic game1 = new Ozlympic();
+		game1.makeGame();
+		Database dd1 = new Database();
+		ArrayList<Swimming> game = new ArrayList<Swimming>();
+		game = dd1.swimming1();
+		boolean val = false;
+		do{
+		game.get(0).startGame();
+		game.get(0).sorting();
+		System.out.println("enter");
+		int vv = sc.nextInt();
+		if (vv == 1){
+			game.get(0).setPointsForWinners();
+			val = true;
+		}
+		else {
+			val = false;
+		}
+		
+		}while(val);
+		
 	}
 
 }

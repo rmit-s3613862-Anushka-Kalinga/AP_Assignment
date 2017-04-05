@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+
+
 public class Database {
 	
 	public  ArrayList getData (){
@@ -13,15 +15,99 @@ public class Database {
 		return g;
 	
 	}
-	public  ArrayList getDataSwimming (){
+	public  ArrayList getDataSwimmingsw1 (){
 		ArrayList<Athlete> dataSwimmer = new ArrayList<Athlete>();
 		Athlete s1 = new Swimmer("sw1", "Andy", 23, "vic");
-		Athlete s2 = new Swimmer("sw2", "Peters", 35, "mel");
-		Athlete sa1 = new SuperAthlete("sa1", "Tec", 22, "vic", 2);
+		Athlete s2 = new Swimmer("sw2", "Peters", 35, "vic");
+		Athlete s3 = new Swimmer("sw3", "Shane Gould", 31, "nsw");
+		Athlete s4 = new Swimmer("sw4", "Ian Thorpe", 24, "nsw");
+		Athlete sa1 = new SuperAthlete("sa1", "Tec", 22, "qld", 2);
+		Athlete sa2 = new SuperAthlete("sa2", "Dawn Fraser", 28, "qld", 2);
 		dataSwimmer.add(s1);
 		dataSwimmer.add(s2);
+		dataSwimmer.add(s3);
+		dataSwimmer.add(s4);
 		dataSwimmer.add(sa1);
+		dataSwimmer.add(sa2);
 		return dataSwimmer;	
+	}
+	public  ArrayList getDataSwimmingsw2 (){
+		ArrayList<Athlete> dataSwimmer = new ArrayList<Athlete>();
+		Athlete s1 = new Swimmer("sw4", "Murray Rose", 23, "vic");
+		Athlete s2 = new Swimmer("sw5", "Grant Hackett", 35, "vic");
+		Athlete s3 = new Swimmer("sw6", "Shane Gould", 31, "nsw");
+		Athlete s4 = new Swimmer("sw7", "Kieren Perkins", 24, "nsw");
+		Athlete s5 = new Swimmer("sw4", "Ian Thorpe", 24, "nsw");
+		Athlete sa1 = new SuperAthlete("sa3", "Tec", 22, "qld", 2);
+		Athlete sa2 = new SuperAthlete("sa4", "Dawn Fraser", 28, "qld", 2);
+		dataSwimmer.add(s1);
+		dataSwimmer.add(s2);
+		dataSwimmer.add(s3);
+		dataSwimmer.add(s4);		
+		dataSwimmer.add((Athlete) SuperAthleteCollection().get(0));
+		dataSwimmer.add(sa2);
+		return dataSwimmer;	
+	}
+	public  ArrayList getDataCyclingcy1 (){
+		ArrayList<Athlete> dataCyclist = new ArrayList<Athlete>();
+		Athlete s1 = new Swimmer("sw1", "Andy", 23, "vic");
+		Athlete s2 = new Swimmer("sw2", "Peters", 35, "vic");
+		Athlete s3 = new Swimmer("sw3", "Shane Gould", 31, "nsw");
+		Athlete s4 = new Swimmer("sw4", "Ian Thorpe", 24, "nsw");
+		Athlete sa1 = new SuperAthlete("sa1", "Tec", 22, "qld", 2);
+		Athlete sa2 = new SuperAthlete("sa2", "Dawn Fraser", 28, "qld", 2);
+		dataCyclist.add(s1);
+		dataCyclist.add(s2);
+		dataCyclist.add(s3);
+		dataCyclist.add(s4);
+		dataCyclist.add(sa1);
+		dataCyclist.add(sa2);
+		return dataCyclist;	
+	}
+	public  ArrayList getDataCyclingcy2 (){
+		ArrayList<Athlete> dataCyclist = new ArrayList<Athlete>();
+		Athlete s1 = new Swimmer("sw4", "Murray Rose", 23, "vic");
+		Athlete s2 = new Swimmer("sw5", "Grant Hackett", 35, "vic");
+		Athlete s3 = new Swimmer("sw6", "Shane Gould", 31, "nsw");
+		Athlete s4 = new Swimmer("sw7", "Kieren Perkins", 24, "nsw");
+		Athlete s5 = new Swimmer("sw4", "Ian Thorpe", 24, "nsw");
+		Athlete sa1 = new SuperAthlete("sa3", "Tec", 22, "qld", 2);
+		Athlete sa2 = new SuperAthlete("sa4", "Dawn Fraser", 28, "qld", 2);
+		dataCyclist.add(s1);
+		dataCyclist.add(s2);
+		dataCyclist.add(s3);
+		dataCyclist.add(s4);		
+		dataCyclist.add((Athlete) SuperAthleteCollection().get(0));
+		dataCyclist.add(sa2);
+		return dataCyclist;	
+	}
+	public ArrayList swimming1(){
+		ArrayList<Swimming> dataSwimmingGame = new ArrayList<Swimming>();
+		Participant refsw1 = new Official("ref1", "Harry", 48, "vic", 2);
+		Participant refsw2 = new Official("ref2", "Anddy", 37, "vic", 2);
+		Swimming sw1 = new Swimming("S01",getDataSwimmingsw1(),refsw1);
+		Swimming sw2 = new Swimming("S02", getDataSwimmingsw2(),refsw2);
+		dataSwimmingGame.add(sw1);
+		dataSwimmingGame.add(sw2);
+		return dataSwimmingGame;
+	}
+	public ArrayList cycling1(){
+		ArrayList<Swimming> dataCyclingGame = new ArrayList<Swimming>();
+		Participant refsw1 = new Official("ref1", "Harry", 48, "vic", 2);
+		Participant refsw2 = new Official("ref2", "Anddy", 37, "vic", 2);
+		Swimming sw1 = new Swimming("C01",getDataCyclingcy1(),refsw1);
+		Swimming sw2 = new Swimming("C02", getDataCyclingcy2(),refsw2);
+		dataCyclingGame.add(sw1);
+		dataCyclingGame.add(sw2);
+		return dataCyclingGame;
+	}
+	public ArrayList SuperAthleteCollection(){
+		ArrayList<Athlete> dataSuperAthlete = new ArrayList<Athlete>();
+		Athlete sa1 = new SuperAthlete("sa3", "Tec", 22, "qld", 2);
+		Athlete sa2 = new SuperAthlete("sa4", "Dawn Fraser", 28, "qld", 2);
+		dataSuperAthlete.add(sa1);
+		dataSuperAthlete.add(sa2);
+		return dataSuperAthlete;
 	}
 //=======
 /*	("SW01", "Shane Gould", 21, "VIC");

@@ -5,11 +5,13 @@ public class Sport1 {
 	private String gameID;
 	private ArrayList<Athlete> p;
 	private Participant referee;
-	private Athlete winner;
+	private Athlete winner = null;
+	private Athlete seccond = null;
+	private Athlete third = null;
 	
-	public Sport1(String gameID, ArrayList swimmingGame, Participant ref){
+	public Sport1(String gameID, ArrayList game, Participant ref){
 		this.gameID = gameID;
-		p = swimmingGame;
+		p = game;
 		referee = ref;
 			
 	}
@@ -18,6 +20,12 @@ public class Sport1 {
 	}
 	public Athlete getWinner(){
 		return winner;
+	}
+	public Athlete getSeccond(){
+		return seccond;
+	}
+	public Athlete getThird(){
+		return third;
 	}
 	public Participant getReferee(){
 		return referee;
@@ -41,6 +49,8 @@ public class Sport1 {
 	}
 	public void setPointsForWinners(){
 		winner = p.get(0);
+		seccond = p.get(1);
+		third = p.get(2);
 		int pointsForFirst = p.get(0).getPoint();
 		int pointsForSecond = p.get(1).getPoint();
 		int pointsForThird = p.get(2).getPoint();

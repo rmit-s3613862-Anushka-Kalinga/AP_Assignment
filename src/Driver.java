@@ -17,7 +17,8 @@ public class Driver {
 		Database db = starter.makeGame();
 		ArrayList<Sport1> runningGame = db.running1();
 		ArrayList<Sport1> swimmingGame = db.swimming1();
-		ArrayList<Sport1> cyclingGame = db.cycling1();		
+		ArrayList<Sport1> cyclingGame = db.cycling1();
+		Display dis = new Display();
 		String predictID = null;
 		int gameNumber = 0;
 		int userselectcat = 0;
@@ -31,7 +32,6 @@ public class Driver {
 					gameNumber = sc.nextInt();
 					System.out.println("You have selected " + gameNumber + " Game");
 					userinputNum = drive.userInput();
-
 				} else if (2 == userinputNum) {
 					System.out.println("Please enter your predicting winner ID");
 					predictID = sc.next();
@@ -52,21 +52,19 @@ public class Driver {
 						else if (userselectcat == 3) {
 							System.out.println("selected 3");
 							gameL.gameLoding(cyclingGame, gameNumber, predictID);
-						}
+						}						
 						
-						/*swimmingGame.get(gameNumber - 1).startGame();
-						if (swimmingGame.get(gameNumber - 1).getWinner().getID().equals(predictID)) {
-							System.out.println("Congratzz Your Prdiction Correct!");
-						} else {
-							System.out.println("Bad Luck!");
-						}*/
 					}else{
 						System.out.println("Please Predict a winner for Game");
 					}
 					userinputNum = drive.userInput();
-				} else if (4 == userinputNum) {					
-					Display dis = new Display();
+				} else if (4 == userinputNum) {						
+					dis.displayResult(runningGame, "Running", "R0" );
 					dis.displayResult(swimmingGame, "Swimming", "S0" );
+					dis.displayResult(cyclingGame, "Cycling", "C0" );
+					userinputNum = drive.userInput();
+				} else if(5 == userinputNum){
+					
 					userinputNum = drive.userInput();
 				}
 			} while (true);
@@ -122,7 +120,7 @@ public class Driver {
 		System.out.println("Please Select Game Category");
 		int category = sc.nextInt();
 		if (category == 1) {
-			dis.categorySelectDisplay(runningGame, "Running", "C0");
+			dis.categorySelectDisplay(runningGame, "Running", "R0");
 		} else if (category == 2) {			
 			dis.categorySelectDisplay(swimmingGame, "Swimming", "S0");			
 		} else if (category == 3) {			

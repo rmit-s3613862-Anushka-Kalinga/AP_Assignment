@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public abstract class Sport {
 
@@ -16,7 +17,7 @@ public abstract class Sport {
 	}
 	
 	protected abstract void startGame();
-	//protected abstract ArrayList<At> getAthlete(); 
+	protected abstract ArrayList getAthlete(); 
 	protected abstract Athlete getWinner();
 	protected abstract void sorting ();
 	protected abstract void setPointsForWinners();

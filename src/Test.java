@@ -17,8 +17,8 @@ public class Test {
 		Database d1 = new Database();
 		
 		ArrayList<Participant> v = new ArrayList<Participant>();
-		v = d1.getData();
-		System.out.println(v.get(0).getAge());
+	//	v = d1.getData();
+	//	System.out.println(v.get(0).getAge());
 		
 		
 		
@@ -30,7 +30,7 @@ public class Test {
 		Ozlympic game1 = new Ozlympic();
 		game1.makeGame();
 		Database dd1 = new Database();
-		ArrayList<Swimming> game = new ArrayList<Swimming>();
+		ArrayList<Sport1> game = new ArrayList<Sport1>();
 		game = dd1.swimming1();
 		boolean val = false;
 		do{

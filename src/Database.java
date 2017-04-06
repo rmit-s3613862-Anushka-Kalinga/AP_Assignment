@@ -6,7 +6,7 @@ public class Database {
 	public  ArrayList getDataRunningR1 (){
 		ArrayList<Athlete> dataRunner = new ArrayList<Athlete>();
 		Athlete s1 = new Swimmer("sp1", "Billy MacPherson", 23, "vic");
-		Athlete s2 = new Swimmer("sp", "Bill Cartwright", 35, "vic");
+		Athlete s2 = new Swimmer("sp2", "Bill Cartwright", 35, "vic");
 		Athlete s3 = new Swimmer("sp3", "Stan Rowley", 31, "nsw");
 		Athlete s4 = new Swimmer("sp4", "George Moir", 24, "nsw");
 		Athlete sa1 = new SuperAthlete("sa4", "John Landy", 22, "qld", 1);
@@ -26,8 +26,8 @@ public class Database {
 		Athlete s3 = new Swimmer("sp6", "Shane Gould", 31, "nsw");
 		Athlete s4 = new Swimmer("sp7", "Ron Opie", 24, "nsw");
 		Athlete s5 = new Swimmer("sp4", "Jimmy Carlton", 24, "nsw");
-		Athlete sa1 = new SuperAthlete("sa3", "Tec", 22, "qld", 2);
-		Athlete sa2 = new SuperAthlete("sa4", "Dawn Fraser", 28, "qld", 2);
+		Athlete sa1 = new SuperAthlete("sa3", "Tec", 22, "qld", 1);
+		Athlete sa2 = new SuperAthlete("sa4", "Dawn Fraser", 28, "qld", 1);
 		dataRunner.add(s1);
 		dataRunner.add(s2);
 		dataRunner.add(s3);
@@ -107,8 +107,8 @@ public class Database {
 		ArrayList<Sport1> dataRunningGame = new ArrayList<Sport1>();
 		Participant refsw1 = new Official("ref3", "Mark Renshaw", 48, "vic", 2);
 		Participant refsw2 = new Official("ref4", "Jimmy Carlton", 37, "vic", 2);
-		Sport1 sw1 = new Sport1("C01",getDataRunningR1(),refsw1);
-		Sport1 sw2 = new Sport1("C02", getDataRunningR2(),refsw2);
+		Sport1 sw1 = new Sport1("R01",getDataRunningR1(),refsw1);
+		Sport1 sw2 = new Sport1("R02", getDataRunningR2(),refsw2);
 		dataRunningGame.add(sw1);
 		dataRunningGame.add(sw2);
 		return dataRunningGame;

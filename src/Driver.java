@@ -40,15 +40,28 @@ public class Driver {
 				} else if (3 == userinputNum) {
 					if (predictID != null) {
 						System.out.println("Game started!");
-						if (userselectcat == 2) {
-							System.out.println("selected 2");
+						GameLoad gameL = new GameLoad();
+						if (userselectcat == 1) {
+							System.out.println("selected 1");
+							gameL.gameLoding(runningGame, gameNumber, predictID);
 						}
-						swimmingGame.get(gameNumber - 1).startGame();
+						else if (userselectcat == 2) {
+							System.out.println("selected 2");
+							gameL.gameLoding(swimmingGame, gameNumber, predictID);
+						}
+						else if (userselectcat == 3) {
+							System.out.println("selected 3");
+							gameL.gameLoding(cyclingGame, gameNumber, predictID);
+						}
+						
+						/*swimmingGame.get(gameNumber - 1).startGame();
 						if (swimmingGame.get(gameNumber - 1).getWinner().getID().equals(predictID)) {
 							System.out.println("Congratzz Your Prdiction Correct!");
 						} else {
 							System.out.println("Bad Luck!");
-						}
+						}*/
+					}else{
+						System.out.println("Please Predict a winner for Game");
 					}
 					userinputNum = drive.userInput();
 				} else if (4 == userinputNum) {					

@@ -16,11 +16,11 @@ public class Display {
 			System.out.println((x + 1) + ". "+gameName+" "+ gameID + (x + 1)+"     "+ "Referee"
 			+"  "+game.get(x).getReferee().getName());
 			System.out.println("---------------------------------------");
-			System.out.format("%15s%10s%10s%10s%10s", "Name","ID","Age","State","Points");
+			System.out.format("%20s%10s%10s%10s%10s", "Name","ID","Age","State","Points");
 			for (int i = 0; i < game.get(x).getAthlete().size(); i++) {
 				ArrayList<Athlete> a1 = (ArrayList<Athlete>) game.get(x).getAthlete();				
 				System.out.println();
-				System.out.format("%15s%10s%10s%10s%10s", a1.get(i).getName(),a1.get(i).getID(),a1.get(i).getAge(),a1.get(i).getState(),a1.get(i).getPoint());
+				System.out.format("%20s%10s%10s%10s%10s", a1.get(i).getName(),a1.get(i).getID(),a1.get(i).getAge(),a1.get(i).getState(),a1.get(i).getPoint());
 			}
 		}
 
@@ -32,11 +32,11 @@ public class Display {
 			System.out.println("--------------------");
 			System.out.println((x + 1) + ". "+gameName+" "+ gameID + (x + 1));
 			System.out.println("--------------------");
-			System.out.format("%15s%10s", "Name","ID");
+			System.out.format("%20s%10s", "Name","ID");
 			for (int i = 0; i < game.get(x).getAthlete().size(); i++) {
 				ArrayList<Athlete> a1 = (ArrayList<Athlete>) game.get(x).getAthlete();				
 				System.out.println();
-				System.out.format("%15s%10s", a1.get(i).getName(),a1.get(i).getID());
+				System.out.format("%20s%10s", a1.get(i).getName(),a1.get(i).getID());
 			}
 		}
 	}

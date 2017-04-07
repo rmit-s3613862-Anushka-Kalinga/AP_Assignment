@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-public class Database {	
+public class Database {		
+	
 	public  ArrayList getDataRunningR1 (){
 		ArrayList<Athlete> dataRunner = new ArrayList<Athlete>();
 		Athlete s1 = new Sprinter("sp1", "Billy MacPherson", 23, "vic");
@@ -131,5 +132,6 @@ public class Database {
 		dataCyclingGame.add(sw2);
 		return dataCyclingGame;
 	}
+	
 
 }

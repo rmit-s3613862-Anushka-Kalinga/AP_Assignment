@@ -56,14 +56,14 @@ public class Sport {
 		third = pList.get(2);
 		int pointsForFirst = pList.get(0).getPoint();
 		int pointsForSecond = pList.get(1).getPoint();
-		int pointsForThird = pList.get(2).getPoint();
+		int pointsForThird = pList.get(2).getPoint();		
 		//System.out.println(pointsForFirst);
 		pointsForFirst += 5;
 		pointsForSecond += 2;
 		pointsForThird +=1;		
 		pList.get(0).setPoint(pointsForFirst );
 		pList.get(1).setPoint(pointsForSecond );
-		pList.get(2).setPoint(pointsForThird );		
+		pList.get(2).setPoint(pointsForThird );			
 		System.out.println("name " + pList.get(0).getID() + "compete time " + pList.get(0).competeTime +"  "+ 
 		pList.get(0).getPoint());
 	}

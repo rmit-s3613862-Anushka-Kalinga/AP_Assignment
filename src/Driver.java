@@ -63,7 +63,9 @@ public class Driver {
 					dis.displayResult(cyclingGame, "Cycling", "C0" );
 					userinputNum = drive.userInput();
 				} else if(5 == userinputNum){
-					
+					dis.displayAthletePoint(runningGame,"Running", "R0");
+					dis.displayAthletePoint(swimmingGame,"Swimming", "S0");
+					dis.displayAthletePoint(cyclingGame,"Cycling", "C0");
 					userinputNum = drive.userInput();
 				}
 			} while (true);

@@ -13,16 +13,16 @@ public class Driver {
 
 	public static void main(String[] args) {
 		String predictID = null;
-		int gameNumber =0;
+		int gameNumber = 0;
 		int userselectcat = 0;
 		boolean value = true;
-		Driver drive = new Driver();		
+		Driver drive = new Driver();
 		Database db = Ozlympic.makeGame();
 		ArrayList<Sport> runningGame = null;
 		ArrayList<Sport> swimmingGame = null;
-		ArrayList<Sport> cyclingGame = null;	
-		
-		Display dis = new Display();		
+		ArrayList<Sport> cyclingGame = null;
+
+		Display dis = new Display();
 		Scanner sc = new Scanner(System.in);
 		int userinputNum = drive.userInput();
 		try {
@@ -44,39 +44,36 @@ public class Driver {
 						GameLoad gameL = new GameLoad();
 						if (userselectcat == 1) {
 							System.out.println("selected 1");
-							runningGame = db.running1();							
-							gameL.gameLoding(runningGame, gameNumber, predictID);							
-						}
-						else if (userselectcat == 2) {
+							runningGame = db.running1();
+							gameL.gameLoding(runningGame, gameNumber, predictID);
+						} else if (userselectcat == 2) {
 							System.out.println("selected 2");
-							swimmingGame = db.swimming1();							
+							swimmingGame = db.swimming1();
 							gameL.gameLoding(swimmingGame, gameNumber, predictID);
-						}
-						else if (userselectcat == 3) {
+						} else if (userselectcat == 3) {
 							System.out.println("selected 3");
-							cyclingGame = db.cycling1();							
+							cyclingGame = db.cycling1();
 							gameL.gameLoding(cyclingGame, gameNumber, predictID);
-						}							
-					}else{
+						}
+					} else {
 						System.out.println("Please Predict a winner for Game");
 					}
 					userinputNum = drive.userInput();
-				} else if (4 == userinputNum) {						
-					if(runningGame != null)
-					dis.displayResult(runningGame, "Running", "R0" );
-				    if (swimmingGame != null)
-					dis.displayResult(swimmingGame, "Swimming", "S0" );
-				    if(cyclingGame != null)
-					dis.displayResult(cyclingGame, "Cycling", "C0" );
-					
+				} else if (4 == userinputNum) {
+					if (runningGame != null)
+						dis.displayResult(runningGame, "Running", "R0");
+					if (swimmingGame != null)
+						dis.displayResult(swimmingGame, "Swimming", "S0");
+					if (cyclingGame != null)
+						dis.displayResult(cyclingGame, "Cycling", "C0");
+
 					userinputNum = drive.userInput();
-				} else if(5 == userinputNum){
-					dis.displayAthletePoint(db.running1(),"Running", "R0");
-					dis.displayAthletePoint(db.swimming1(),"Swimming", "S0");
-					dis.displayAthletePoint(db.cycling1(),"Cycling", "C0");
+				} else if (5 == userinputNum) {
+					dis.displayAthletePoint(db.running1(), "Running", "R0");
+					dis.displayAthletePoint(db.swimming1(), "Swimming", "S0");
+					dis.displayAthletePoint(db.cycling1(), "Cycling", "C0");
 					userinputNum = drive.userInput();
-				}
-				  else if(6 == userinputNum){
+				} else if (6 == userinputNum) {
 					value = false;
 				}
 			} while (value);

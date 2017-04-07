@@ -16,22 +16,18 @@ public class Driver {
 	 */
 
 	public static void main(String[] args) {
-		String predictID = null; // user pridect athlete ID
+		String predictID = null; // user predict athlete ID
 		int gameNumber = 0; // user selected game number
 		int userselectcat = 0; // user selected category
 		boolean value = true; // while condition checker
 		Driver drive = new Driver();
 		Database db = Ozlympic.makeGame();
-		ArrayList<Sport> runningGame = null; // arraylist of running games from
-												// database
-		ArrayList<Sport> swimmingGame = null;// arraylist of swimming games from
-												// database
-		ArrayList<Sport> cyclingGame = null;// arraylist of cycling games from
-											// database
+		ArrayList<Sport> runningGame = null; // arraylist of running games from database												
+		ArrayList<Sport> swimmingGame = null;// arraylist of swimming games from database												
+		ArrayList<Sport> cyclingGame = null;// arraylist of cycling games from database											
 		Display dis = new Display();
 		Scanner sc = new Scanner(System.in);
-		int userinputNum = drive.userInput(); // user selected menu number and
-												// menu display
+		int userinputNum = drive.userInput(); // user selected menu number and menu display												
 		try {
 			do {
 				if (1 == userinputNum) { // select game category
@@ -50,16 +46,13 @@ public class Driver {
 						System.out.println("Game started!");
 						GameLoad gameL = new GameLoad();
 						if (userselectcat == 1) {
-							runningGame = db.running1(); // assign running games
-															// arraylist
+							runningGame = db.running1(); // assign running games arraylist															
 							gameL.gameLoding(runningGame, gameNumber, predictID);
 						} else if (userselectcat == 2) {
-							swimmingGame = db.swimming1();// assign swimming
-															// games arraylist
+							swimmingGame = db.swimming1();// assign swimming games arraylist														
 							gameL.gameLoding(swimmingGame, gameNumber, predictID);
 						} else if (userselectcat == 3) {
-							cyclingGame = db.cycling1(); // assign cycling games
-															// arraylist
+							cyclingGame = db.cycling1(); // assign cycling games arraylist														
 							gameL.gameLoding(cyclingGame, gameNumber, predictID);
 						}
 					} else {

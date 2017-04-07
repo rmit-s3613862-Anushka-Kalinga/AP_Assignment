@@ -12,16 +12,16 @@ import java.util.ArrayList;
 public class Driver {
 
 	public static void main(String[] args) {
-		Driver drive = new Driver();
-		Ozlympic starter = new Ozlympic();
-		Database db = starter.makeGame();
-		ArrayList<Sport1> runningGame = db.running1();
-		ArrayList<Sport1> swimmingGame = db.swimming1();
-		ArrayList<Sport1> cyclingGame = db.cycling1();
-		Display dis = new Display();
 		String predictID = null;
-		int gameNumber = 0;
+		int gameNumber =0;
 		int userselectcat = 0;
+		Driver drive = new Driver();
+		//Ozlympic starter = new Ozlympic();
+		Database db = Ozlympic.makeGame();
+		ArrayList<Sport> runningGame = db.running1();
+		ArrayList<Sport> swimmingGame = db.swimming1();
+		ArrayList<Sport> cyclingGame = db.cycling1();
+		Display dis = new Display();		
 		Scanner sc = new Scanner(System.in);
 		int userinputNum = drive.userInput();
 		try {
@@ -52,8 +52,7 @@ public class Driver {
 						else if (userselectcat == 3) {
 							System.out.println("selected 3");
 							gameL.gameLoding(cyclingGame, gameNumber, predictID);
-						}						
-						
+						}							
 					}else{
 						System.out.println("Please Predict a winner for Game");
 					}
@@ -111,9 +110,9 @@ public class Driver {
 
 	public int categorySelection() {
 		Ozlympic starter = new Ozlympic();
-		ArrayList<Sport1> runningGame = starter.makeGame().running1();
-		ArrayList<Sport1> swimmingGame = starter.makeGame().swimming1();
-		ArrayList<Sport1> cyclingGame = starter.makeGame().cycling1();
+		ArrayList<Sport> runningGame = starter.makeGame().running1();
+		ArrayList<Sport> swimmingGame = starter.makeGame().swimming1();
+		ArrayList<Sport> cyclingGame = starter.makeGame().cycling1();
 		Display dis = new Display();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("1. Running" + "\n" + "2. Swimming" + "\n" + "3. Cycling");

@@ -102,31 +102,31 @@ public class Database {
 		return dataCyclist;			
 	}
 	public ArrayList running1(){
-		ArrayList<Sport1> dataRunningGame = new ArrayList<Sport1>();
+		ArrayList<Sport> dataRunningGame = new ArrayList<Sport>();
 		Participant refsw1 = new Official("ref3", "Mark Renshaw", 48, "vic", 2);
 		Participant refsw2 = new Official("ref4", "Jimmy Carlton", 37, "vic", 2);
-		Sport1 sw1 = new Sport1("R01",getDataRunningR1(),refsw1);
-		Sport1 sw2 = new Sport1("R02", getDataRunningR2(),refsw2);
+		Sport sw1 = new Sport("R01",getDataRunningR1(),refsw1);
+		Sport sw2 = new Sport("R02", getDataRunningR2(),refsw2);
 		dataRunningGame.add(sw1);
 		dataRunningGame.add(sw2);
 		return dataRunningGame;
 	}
 	public ArrayList swimming1(){
-		ArrayList<Sport1> dataRunningGame = new ArrayList<Sport1>();
+		ArrayList<Sport> dataRunningGame = new ArrayList<Sport>();
 		Participant refsw1 = new Official("ref1", "Harry", 48, "vic", 2);
 		Participant refsw2 = new Official("ref2", "Andy", 37, "vic", 2);
-		Sport1 sw1 = new Sport1("S01",getDataSwimmingsw1(),refsw1);
-		Sport1 sw2 = new Sport1("S02", getDataSwimmingsw2(),refsw2);
+		Sport sw1 = new Sport("S01",getDataSwimmingsw1(),refsw1);
+		Sport sw2 = new Sport("S02", getDataSwimmingsw2(),refsw2);
 		dataRunningGame.add(sw1);
 		dataRunningGame.add(sw2);
 		return dataRunningGame;
 	}
 	public ArrayList cycling1(){
-		ArrayList<Sport1> dataCyclingGame = new ArrayList<Sport1>();
+		ArrayList<Sport> dataCyclingGame = new ArrayList<Sport>();
 		Participant refsw1 = new Official("ref6", "Michael Hillardt", 48, "vic", 2);
 		Participant refsw2 = new Official("ref8", "Alan Ozolins", 37, "vic", 2);
-		Sport1 sw1 = new Sport1("C01",getDataCyclingcy1(),refsw1);
-		Sport1 sw2 = new Sport1("C02", getDataCyclingcy2(),refsw2);
+		Sport sw1 = new Sport("C01",getDataCyclingcy1(),refsw1);
+		Sport sw2 = new Sport("C02", getDataCyclingcy2(),refsw2);
 		dataCyclingGame.add(sw1);
 		dataCyclingGame.add(sw2);
 		return dataCyclingGame;

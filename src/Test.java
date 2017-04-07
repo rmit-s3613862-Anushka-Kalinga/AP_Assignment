@@ -30,7 +30,7 @@ public class Test {
 		Ozlympic game1 = new Ozlympic();
 		game1.makeGame();
 		Database dd1 = new Database();
-		ArrayList<Sport1> game = new ArrayList<Sport1>();
+		ArrayList<Sport> game = new ArrayList<Sport>();
 		game = dd1.swimming1();
 		boolean val = false;
 		do{

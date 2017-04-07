@@ -2,14 +2,13 @@ import java.util.ArrayList;
 
 public class Display {	
 
-	public void displayResult(ArrayList<Sport1> game,String gameName, String gameID) {		
+	public void displayResult(ArrayList<Sport> game,String gameName, String gameID) {		
 		for (int x = 0; x < game.size(); x++) {
 			System.out.println();
 			System.out.println("-------------------------------------------");
 			System.out.println((x + 1) + ". "+gameName+" "+ gameID + (x + 1)+"     "+ "Referee"
 			+"  "+game.get(x).getReferee().getName());
-			System.out.println("-------------------------------------------");
-			//System.out.format("%20s%10s%10s%10s%10s", "Name","ID","Age","State","Position");
+			System.out.println("-------------------------------------------");			
 			if(game.get(x).getWinner() != null ){
 			System.out.println("Winner of the Game");
 			System.out.println("------------------");
@@ -37,7 +36,7 @@ public class Display {
 		}
 
 	}
-	public void categorySelectDisplay(ArrayList<Sport1> game,String gameName, String gameID){
+	public void categorySelectDisplay(ArrayList<Sport> game,String gameName, String gameID){
 		
 		for (int x = 0; x < game.size(); x++) {
 			System.out.println();
@@ -52,7 +51,7 @@ public class Display {
 			}
 		}
 	}
-	public void displayAthletePoint(ArrayList<Sport1> game,String gameName, String gameID) {		
+	public void displayAthletePoint(ArrayList<Sport> game,String gameName, String gameID) {		
 		for (int x = 0; x < game.size(); x++) {
 			System.out.println();
 			System.out.println("---------------------------------------");
@@ -66,6 +65,7 @@ public class Display {
 				System.out.format("%20s%10s%10s%10s%10s", a1.get(i).getName(),a1.get(i).getID(),a1.get(i).getAge(),a1.get(i).getState(),a1.get(i).getPoint());
 			}
 		}
+		
 
 	}
 }

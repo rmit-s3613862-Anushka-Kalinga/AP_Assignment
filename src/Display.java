@@ -27,7 +27,14 @@ public class Display {
 			}else{
 				System.out.println("Haven't played the game");
 			}
-			/*for (int i = 0; i < 3; i++) {
+			
+		/*for (int x = 0; x < game.size(); x++) {
+		for (int i = 0; i < game.get(x).getAthlete().size(); i++) {
+			ArrayList<Athlete> a1 = (ArrayList<Athlete>) game.get(x).getAthlete();				
+			System.out.println();
+			System.out.format("%20s%10s%10s%10s%10s", a1.get(i).getName(),a1.get(i).getID(),a1.get(i).getAge(),a1.get(i).getState(),a1.get(i).getPoint());
+		}
+			for (int i = 0; i < 3; i++) {
 				ArrayList<Athlete> a1 = (ArrayList<Athlete>) game.get(x).getAthlete();				
 				System.out.println();
 				System.out.format("%20s%10s%10s%10s%10s", a1.get(i).getName(),
@@ -35,9 +42,9 @@ public class Display {
 						a1.get(i).getPoint());
 				System.out.println("Winner of the Game");
 				System.out.println();
-			}*/
+			}
+		}*/
 		}
-
 	}
 	public void categorySelectDisplay(ArrayList<Sport> game,String gameName, String gameID){
 		

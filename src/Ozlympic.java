@@ -15,8 +15,8 @@ public class Ozlympic {
 	 * @param args
 	 */
 
-	public static Database makeGame(){
-		Database dataCollection = new Database();		
+	public static Database makeGame() {
+		Database dataCollection = new Database();
 		return dataCollection;
 	}
 }

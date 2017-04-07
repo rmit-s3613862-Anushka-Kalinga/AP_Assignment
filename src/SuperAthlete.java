@@ -1,10 +1,23 @@
 import java.util.Random;
 
+/**
+ * 
+ * @author Kalinga
+ *
+ */
 public class SuperAthlete extends Athlete {
 
-	private int type;
-	private int ranTime = 0;
+	private int type; // super athlete sprinter, swimmer or cyclist selection
+	private int ranTime = 0; // random time
 
+	/**
+	 * 
+	 * @param ID
+	 * @param name
+	 * @param age
+	 * @param state
+	 * @param type
+	 */
 	public SuperAthlete(String ID, String name, int age, String state, int type) {
 		super(ID, name, age, state);
 		this.type = type;
@@ -18,6 +31,7 @@ public class SuperAthlete extends Athlete {
 		this.type = type;
 	}
 
+	@Override
 	public void compete() {
 		if (type == 1) {
 			ranTime = getRandom(10, 20);
@@ -34,6 +48,13 @@ public class SuperAthlete extends Athlete {
 
 	}
 
+	/**
+	 * random time generator
+	 * 
+	 * @param min is compete time minimum value	             
+	 * @param max is compete time max value	            
+	 * @return
+	 */
 	public int getRandom(int min, int max) {
 		Random ran = new Random();
 		return ran.nextInt((max - min) + 1) + min;

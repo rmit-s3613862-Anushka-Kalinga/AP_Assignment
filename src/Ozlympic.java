@@ -1,17 +1,19 @@
 import java.util.Scanner;
 
 /**
- * 
+ * connection make to database
  */
 
 /**
- * @author my
+ * @author Kalinga
  *
  */
 
 public class Ozlympic {
 
 	/**
+	 * connect database
+	 * 
 	 * @param args
 	 */
 

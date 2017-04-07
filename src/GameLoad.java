@@ -1,6 +1,21 @@
 import java.util.ArrayList;
 
+/**
+ * programme to start the game and check user prediction
+ * 
+ * @author Kalinga
+ *
+ */
 public class GameLoad {
+	/**
+	 * 
+	 * @param game
+	 *            is arraylist of sport
+	 * @param gameNumber
+	 *            is user selected sport number
+	 * @param predictID
+	 *            is user predicted winner ID
+	 */
 	public void gameLoding(ArrayList<Sport> game, int gameNumber, String predictID) {
 
 		game.get(gameNumber - 1).startGame();

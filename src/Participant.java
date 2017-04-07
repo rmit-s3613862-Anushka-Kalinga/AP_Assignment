@@ -1,4 +1,9 @@
-
+/**
+ * this class abstract of athlete and official
+ * 
+ * @author Kalinga
+ *
+ */
 public abstract class Participant {
 	private String ID;
 	private String name;

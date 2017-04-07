@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author Kalinga
+ *
+ */
 public class Official extends Participant {
 	private int rank;
 

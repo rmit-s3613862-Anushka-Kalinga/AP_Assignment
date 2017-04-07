@@ -1,7 +1,21 @@
 import java.util.ArrayList;
 
-public class Display {
+/**
+ * 
+ * @author Kalinga
+ *
+ */
+/*
+ * console interface display related functions
+ */
 
+public class Display {
+/**
+ * display final result of all games
+ * @param game is arraylist of sport
+ * @param gameName is name of game
+ * @param gameID 
+ */
 	public void displayResult(ArrayList<Sport> game, String gameName, String gameID) {
 		for (int x = 0; x < game.size(); x++) {
 			System.out.println();
@@ -26,7 +40,12 @@ public class Display {
 			}
 		}
 	}
-
+/**
+ * display category 
+ * @param game
+ * @param gameName
+ * @param gameID
+ */
 	public void categorySelectDisplay(ArrayList<Sport> game, String gameName, String gameID) {
 
 		for (int x = 0; x < game.size(); x++) {
@@ -42,7 +61,12 @@ public class Display {
 			}
 		}
 	}
-
+/**
+ * display athletes final points
+ * @param game
+ * @param gameName
+ * @param gameID
+ */
 	public void displayAthletePoint(ArrayList<Sport> game, String gameName, String gameID) {
 		for (int x = 0; x < game.size(); x++) {
 			System.out.println();

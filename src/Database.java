@@ -1,5 +1,9 @@
 import java.util.ArrayList;
-
+/**
+ * progarame to store athletes objects 
+ * @author Kalinga
+ *
+ */
 public class Database {
 	Athlete sp1 = new Sprinter("sp1", "Billy MacPherson", 23, "vic");
 	Athlete sp2 = new Sprinter("sp2", "Bill Cartwright", 35, "vic");
@@ -39,7 +43,10 @@ public class Database {
 	SuperAthlete sa3 = new SuperAthlete("sa3", "Tec", 22, "qld", 1);
 	SuperAthlete sa4 = new SuperAthlete("sa4", "John Landy", 22, "qld", 1);
 	SuperAthlete sa7 = new SuperAthlete("sa7", "Michael Hillardt", 28, "qld", 1);
-
+/**
+ * 
+ * @return is ArrayList of sprinters set 1
+ */
 	public ArrayList getDataRunningR1() {
 		ArrayList<Athlete> dataRunner = new ArrayList<Athlete>();
 		sa4.setType(1);
@@ -52,7 +59,9 @@ public class Database {
 		dataRunner.add(sa7);
 		return dataRunner;
 	}
-
+/*
+ * @return is ArrayList of sprinters set 2
+ */
 	public ArrayList getDataRunningR2() {
 		ArrayList<Athlete> dataRunner = new ArrayList<Athlete>();
 		sa3.setType(1);
@@ -67,6 +76,10 @@ public class Database {
 		return dataRunner;
 	}
 
+/*
+ * @return is ArrayList of swimmers set 1
+ */
+
 	public ArrayList getDataSwimmingsw1() {
 		ArrayList<Athlete> dataSwimmer = new ArrayList<Athlete>();
 		sa1.setType(2);
@@ -79,7 +92,9 @@ public class Database {
 		dataSwimmer.add(sa2);
 		return dataSwimmer;
 	}
-
+/*
+ * @return is ArrayList of swimmers set 2
+ */	
 	public ArrayList getDataSwimmingsw2() {
 		ArrayList<Athlete> dataSwimmer = new ArrayList<Athlete>();
 
@@ -93,7 +108,9 @@ public class Database {
 		dataSwimmer.add(sa4);
 		return dataSwimmer;
 	}
-
+/*
+ * @return is ArrayList of cyclist set 1
+ */
 	public ArrayList getDataCyclingcy1() {
 		ArrayList<Athlete> dataCyclist = new ArrayList<Athlete>();
 		sa4.setType(3);
@@ -106,7 +123,9 @@ public class Database {
 		dataCyclist.add(sa2);
 		return dataCyclist;
 	}
-
+/*
+ * @return is ArrayList of cyclist set 2
+ */
 	public ArrayList getDataCyclingcy2() {
 		ArrayList<Athlete> dataCyclist = new ArrayList<Athlete>();
 
@@ -121,7 +140,9 @@ public class Database {
 		dataCyclist.add(sa4);
 		return dataCyclist;
 	}
-
+/*
+ * @return ArrayList of running sport
+ */
 	public ArrayList running1() {
 		ArrayList<Sport> dataRunningGame = new ArrayList<Sport>();
 		Participant refsw1 = new Official("ref3", "Mark Renshaw", 48, "vic", 2);
@@ -133,6 +154,10 @@ public class Database {
 		return dataRunningGame;
 	}
 
+/**
+ * 	
+ * @return ArrayList of swimming sport
+ */
 	public ArrayList swimming1() {
 		ArrayList<Sport> dataRunningGame = new ArrayList<Sport>();
 		Participant refsw1 = new Official("ref1", "Harry", 48, "vic", 2);
@@ -143,7 +168,9 @@ public class Database {
 		dataRunningGame.add(sw2);
 		return dataRunningGame;
 	}
-
+/*
+ * @return ArrayList of cycling sport
+ */
 	public ArrayList cycling1() {
 		ArrayList<Sport> dataCyclingGame = new ArrayList<Sport>();
 		Participant refsw1 = new Official("ref6", "Michael Hillardt", 48, "vic", 2);

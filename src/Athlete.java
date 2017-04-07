@@ -1,17 +1,20 @@
 import java.util.Random;
 
 /**
- * 
+ * programe to compare compete times and abstract of athletes
+ * @author Kalinga
+ *
  */
 
 /**
- * @author my
+ * 
+ * Athletes compete time win points related functions
  *
  */
 public abstract class Athlete extends Participant implements Comparable<Athlete> {
 
-	private int point;
-	public int competeTime;
+	private int point; // athlete winner points
+	public int competeTime; // athlete compete time
 
 	public Athlete(String ID, String name, int age, String state) {
 		super(ID, name, age, state);
@@ -32,6 +35,10 @@ public abstract class Athlete extends Participant implements Comparable<Athlete>
 		return competeTime;
 	}
 
+	/**
+	 * override compareTo method in Comparable interface
+	 */
+	@Override
 	public int compareTo(Athlete o) {
 		if (this.getCompeteTime() < o.getCompeteTime()) {
 			return -1;

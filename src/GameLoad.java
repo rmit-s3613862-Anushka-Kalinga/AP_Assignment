@@ -20,9 +20,9 @@ public class GameLoad {
 
 		game.get(gameNumber - 1).startGame();
 		if (game.get(gameNumber - 1).getWinner().getID().equals(predictID)) {
-			System.out.println("Congratzz Your Prdiction Correct!");
+			System.out.println("Congratzz Your Prediction Correct!");
 		} else {
-			System.out.println("Bad Luck!");
+			System.out.println("Bad Luck Your Prediction Wrong");
 		}
 
 	}

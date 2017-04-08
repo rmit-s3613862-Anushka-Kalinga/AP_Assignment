@@ -48,12 +48,15 @@ public class Driver {
 						if (userselectcat == 1) {
 							runningGame = db.running1(); // assign running games arraylist															
 							gameL.gameLoding(runningGame, gameNumber, predictID);
+							predictID = null;
 						} else if (userselectcat == 2) {
 							swimmingGame = db.swimming1();// assign swimming games arraylist														
 							gameL.gameLoding(swimmingGame, gameNumber, predictID);
+							predictID = null;
 						} else if (userselectcat == 3) {
 							cyclingGame = db.cycling1(); // assign cycling games arraylist														
 							gameL.gameLoding(cyclingGame, gameNumber, predictID);
+							predictID = null;
 						}
 					} else {
 						System.out.println("Please Predict a winner for Game by pressing 2");
@@ -115,12 +118,12 @@ public class Driver {
 					usercorrect = false;
 				} else {
 					System.out.println("");
-					System.out.println("Please enter valid number");
+					System.out.println("Please enter valid menu number");
 					usercorrect = true;
 				}
 			} while (usercorrect);
 		} catch (Exception e) { // user input not an integer
-			System.out.println("Error");
+			System.err.println("Error has occured!");
 		}
 		return userInputNum;
 	}

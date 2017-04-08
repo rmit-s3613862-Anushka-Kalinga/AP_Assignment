@@ -84,7 +84,6 @@ public class Sport {
 		pList.get(0).setPoint(pointsForFirst);
 		pList.get(1).setPoint(pointsForSecond);
 		pList.get(2).setPoint(pointsForThird);
-		System.out.println("name " + pList.get(0).getID() + "compete time " + pList.get(0).competeTime + "  "
-				+ pList.get(0).getPoint());
+		
 	}
 }
